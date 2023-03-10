@@ -16,32 +16,47 @@ h5 {
   margin: 0px 100px;
 }
 
-.expand {
+.action-icon {
+  display: none;
   font-size: 30px;
-  font-weight: 450;
+  font-weight: 700;
   margin-bottom: 5px;
 }
 
-.close {
-  font-size: 30px;
-  font-weight: 400;
-  margin-bottom: 5px;
-  display: none;
+.accordion-container:hover .action-icon {
+  display: block;
+}
+
+.accordion-container:hover .accordion-name {
+  color: black;
+}
+
+.accordion-item:hover .accordion-furs{
+    height: 400px;
 }
 
 .accordion-name {
+  color: rgb(0, 36, 217);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 45px;
 }
 
 .accordion-item {
   display: flex;
   width: 100%;
   flex-direction: column;
+  transition: all ease-in-out 1s;
 }
 
 .accordion-image {
-  width: 35%;
-  align-self: center;
+  height: 100%;
+}
+
+.accordion-furs {
+    height: 0px;
+    display: flex;
+    justify-content: center;
+    transition: all ease-in-out 0.8s;
 }
